@@ -1,69 +1,80 @@
 import React, { useState, useEffect } from "react";
 import "./ImageGallery.css";
 import image1 from "../Assets/Images/image1.jpg";
+import image2 from "../Assets/Images/image2.jpg";
+import image3 from "../Assets/Images/image3.jpg";
+import image4 from "../Assets/Images/image4.jpg";
+import image5 from "../Assets/Images/image5.jpg";
+import image6 from "../Assets/Images/image6.jpg";
 import image7 from "../Assets/Images/image7.jpg";
+import image8 from "../Assets/Images/image8.jpg";
 import Footer from "./Footer.js";
 
 const initialImages = [
   {
     id: 1,
     src: image1,
-    tags: ["art", "collection"],
+    tags: ["art", "collection", "frames"],
   },
   {
     id: 2,
-    src: image7,
+    src: image2,
     tags: ["art", "structure", "architecture"],
   },
   {
     id: 3,
-    src: image1,
-    tags: ["art", "minimalist", "collection"],
+    src: image5,
+    tags: ["art", "minimalist", "frames"],
   },
   {
     id: 4,
-    src: image7,
-    tags: ["art", "minimalist", "collection"],
+    src: image3,
+    tags: ["girl", "fashion", "kid"],
   },
   {
     id: 5,
-    src: image1,
+    src: image4,
     tags: ["art", "minimalist", "collection"],
   },
   {
     id: 6,
-    src: image7,
-    tags: ["art", "minimalist", "collection"],
+    src: image6,
+    tags: ["korea", "travel", "seoul"],
   },
   {
     id: 7,
-    src: image1,
-    tags: ["art", "minimalist", "collection"],
+    src: image7,
+    tags: ["skyscrapper", "girl", "street"],
   },
   {
     id: 8,
-    src: image7,
-    tags: ["art", "minimalist", "collection"],
+    src: image8,
+    tags: ["water color", "art", "turtle"],
   },
   {
     id: 9,
-    src: image1,
-    tags: ["art", "minimalist", "collection"],
+    src: image2,
+    tags: ["art", "travel", "street"],
   },
   {
     id: 10,
     src: image7,
-    tags: ["art", "minimalist", "collection"],
+    tags: ["street", "photography", "summer"],
   },
   {
     id: 11,
-    src: image1,
-    tags: ["art", "minimalist", "collection"],
+    src: image4,
+    tags: ["art", "minimalist", "frames"],
   },
   {
     id: 12,
-    src: image7,
-    tags: ["art", "minimalist", "collection"],
+    src: image5,
+    tags: ["art", "designer", "pictures"],
+  },
+  {
+    id: 13,
+    src: image6,
+    tags: ["south korea", "city", "night"],
   },
 ];
 
@@ -73,7 +84,6 @@ function ImageGallery() {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay (remove in production)
     setTimeout(() => {
       setLoading(false);
     }, 2000);
